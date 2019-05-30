@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="game.js"></script>
+	<title>Piedra, papel, tijera</title>
+</head>
+<body>
+    <div class="juego contenedor">
+        <div class="titulo-puntos">
+            <h1>Piedra papel o tijera.</h1>
+            <p class="titulo"><br>Juega contra la m&aacute;quina.</p>
+            <div class="puntos" id="puntos">
+                <div class="ganados">
+                <p id="ganados"></p>
+                </div>
+                
+                <div class="perdidos">
+                <p id="perdidos"></p>
+                </div>
+                
+                <div class="empates">
+                 <p id="empates"></p>
+                </div>
+            </div>
+        </div>
+        <div class="botones">
+            <h2>Elije tu juego</h2>
+            <button class="botonera piedra" id="piedra" onclick="usuario('0');">Piedra</button>
+			<button class="botonera papel" id="papel" onclick="usuario('1');">Papel</button>
+			<button class="botonera tijera" id="tijera" onclick="usuario('2');">Tijera</button>
+        </div>
+        <div class="resultados"> 
+            <h2>Resultados: </h2>
+            <p id="title"></p>
+            <p id="res"></p>
+            
+         </div>
+    </div>
+</body>
+</html>
